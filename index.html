@@ -124,7 +124,7 @@
 										<input type="password" autocomplete="off" required="" class="form-control" name="password" id="password" placeholder="Password">
 									</div>
 
-									<button type="button" name="login" class="btn btn-primary login fw-bold fs-6" style="">LOG IN</button>
+									<button type="button" name="login" class="btn btn-primary login fw-bold fs-6" style="" data-bs-toggle="modal" data-bs-target="#exampleModal" >LOG IN</button>
 								</form>
 							</div>
 						</div>
@@ -177,11 +177,39 @@
 		</div>
 	</div>
 
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header bg-danger text-white">
+	        <h5 class="modal-title" id="exampleModalLabel">Alert Modal </h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <p class="fs-6">
+	        	Gak Bisa Login Disini karena Ini Cuman Clone Ajah, 
+	        	<br>
+	        	Harus Login Di Web Resmi LMS nya. 
+	        	<br>
+	        	klik <a href="https://ilkom-unsub.info/lms/login/index.php" target="blank">disini</a> ke webnya
+	        </p>
+	      </div>
+	      <div class="modal-footer">
+	      	Saepul Hidayat || PROFA ( PROGRAMMER FASILKOM )
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- atasi bloked di github pages -->
+	<!-- was loaded over HTTPS, but requested an insecure script 'http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'. This request has been blocked; the content must be served over HTTPS. -->
+	<!-- https://stackoverflow.com/questions/32307235/how-to-fix-blocked-loading-mixed-active-content-for-css-and-js-over-https -->
+
+	<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 
 
 	<!-- stats.js lib --> 
-	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+	<script src="//threejs.org/examples/js/libs/stats.min.js"></script>
 	<!-- ini buat fps -->
 
 
